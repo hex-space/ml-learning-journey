@@ -106,5 +106,5 @@ def dm03_logistic_regression():
 # 4. 测试
 if __name__ == '__main__':
     # dm01_data_preprocess()
-    # dm02_data_visualization()
-    dm03_logistic_regression()
+    dm02_data_visualization()
+    # dm03_logistic_regression()
