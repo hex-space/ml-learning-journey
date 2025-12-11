@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # 1. 定义函数, 演示: 数据的预处理.
 def dm01_data_preprocess():
     # 1. 读取csv文件, 获取到df对象.
-    churn_df = pd.read_csv('./data/churn.csv')
+    churn_df = pd.read_csv('./churn.csv')
     # 2. 查看(处理前)的数据集.
     # churn_df.info()
     # print(churn_df.head(5))
@@ -40,7 +40,7 @@ def dm01_data_preprocess():
 # 2. 定义函数, 演示: 数据的可视化.
 def dm02_data_visualization():
     # 1. 读取csv文件, 获取到df对象.
-    churn_df = pd.read_csv('./data/churn.csv')
+    churn_df = pd.read_csv('./churn.csv')
     # 2. 对object类型的列(数据)做 one-hot编码处理.
     churn_df = pd.get_dummies(churn_df, columns=['Churn', 'gender'])
     # 3. 删除one-hot处理后, 冗余的列.
@@ -63,7 +63,7 @@ def dm02_data_visualization():
 # 3. 定义函数, 演示: 逻辑回归算法的模型训练,预测,评估.
 def dm03_logistic_regression():
     # 1. 加载数据集.
-    churn_df = pd.read_csv('./data/churn.csv')
+    churn_df = pd.read_csv('./churn.csv')
 
     # 2.数据的预处理.
     # 2.1 对object类型的列(数据)做 one-hot编码处理.
