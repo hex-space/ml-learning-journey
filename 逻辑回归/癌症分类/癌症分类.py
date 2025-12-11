@@ -18,7 +18,7 @@ from sklearn.preprocessing import StandardScaler
 
 def dm01_LogisticRegression():
     # 1. 获取数据.
-    data = pd.read_csv('../data/breast-cancer-wisconsin.csv')
+    data = pd.read_csv('breast-cancer-wisconsin.csv')
     data.info()
 
     # 2. 数据预处理.
